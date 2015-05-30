@@ -45,5 +45,8 @@ Visit [plugin documentation website](http://dunghv.com "plugin documentation")
 
 == Changelog ==
 
+= 1.0.2 =
+* Fix some issues
+
 = 1.0.1 =
 * Picasa Media Library plugin released
