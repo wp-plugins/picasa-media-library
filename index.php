@@ -11,8 +11,6 @@
 add_action('admin_enqueue_scripts', 'vpml_enqueue_scripts');
 
 function vpml_enqueue_scripts($hook) {
-    if (('edit.php' != $hook) && ('post-new.php' != $hook) && ('post.php' != $hook))
-        return;
     wp_enqueue_script('colorbox', plugin_dir_url(__FILE__) . '/js/jquery.colorbox.js', array('jquery'));
     wp_enqueue_script('cookie', plugin_dir_url(__FILE__) . '/js/jquery.cookie.js', array('jquery'));
     wp_enqueue_style('colorbox', plugins_url('css/colorbox.css', __FILE__));
