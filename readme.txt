@@ -17,7 +17,7 @@ Get all albums and images from a Google+ or Picasa user, see a preview, insert i
 = Quick Video Demo =
 http://www.youtube.com/watch?v=0SM9nuh4fhI
 
-= Feature =
+= Features =
 - Get all albums and images from a Google+ or Picasa user
 - Insert image into content
 - Save image to Media Library
