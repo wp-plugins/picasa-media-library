@@ -3,7 +3,7 @@ Contributors: baby2j
 Donate link: http://dunghv.com
 Tags: picasa, picasa images, picasa download, picasa library, picasa api
 Requires at least: 3.5
-Tested up to: 4.2.2
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,14 +14,17 @@ Get all albums and images from a Google+ or Picasa user, see a preview, insert i
 
 Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
 
-Feature:
+= Quick Video Demo =
+http://www.youtube.com/watch?v=0SM9nuh4fhI
 
+= Feature =
 - Get all albums and images from a Google+ or Picasa user
 - Insert image into content
 - Save image to Media Library
 - Use image as featured image
 
-Note: To have full version with other feature as "Save to Media Library" and "Set Featured Image", please go to http://dunghv.com
+= Note =
+To have full version with "Save to Media Library" feature, please go to http://dunghv.com
 
 == Installation ==
 
@@ -44,6 +47,12 @@ Note: To have full version with other feature as "Save to Media Library" and "Se
 Visit [plugin documentation website](http://dunghv.com "plugin documentation")
 
 == Changelog ==
+
+= 2.1 =
+* Improve UI & Clean code
+
+= 2.0.1 =
+* Improve UI
 
 = 1.0.2 =
 * Fix some issues
