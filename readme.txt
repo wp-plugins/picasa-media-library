@@ -48,6 +48,10 @@ Visit [plugin documentation website](http://dunghv.com "plugin documentation")
 
 == Changelog ==
 
+= 2.2 =
+* Fix duplicate image
+* Fix unattached image
+
 = 2.1 =
 * Improve UI & Clean code
 

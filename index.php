@@ -3,7 +3,7 @@
   Plugin Name: WP Picasa Media Library
   Plugin URI: http://dunghv.com/downloads/wordpress-picasa-media-library
   Description: Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
-  Version: 2.1
+  Version: 2.2
   Author: Dunghv
   Author URI: http://dunghv.com
  */
@@ -25,7 +25,7 @@ function vpml_redirect() {
 add_action( 'admin_menu', 'vpml_menu_pages' );
 
 function vpml_menu_pages() {
-	add_menu_page( 'Picasa', 'Picasa', 'manage_options', 'vpml-welcome', 'vpml_menu_page_welcome', 'dashicons-camera', 81 );
+	add_menu_page( 'Picasa', 'Picasa', 'manage_options', 'vpml-welcome', 'vpml_menu_page_welcome', 'dashicons-camera' );
 	add_submenu_page( 'vpml-welcome', 'About', 'About', 'manage_options', 'vpml-welcome' );
 	add_submenu_page( 'vpml-welcome', 'Settings', 'Settings', 'manage_options', 'vpml-settings', 'vpml_menu_page_settings' );
 }
@@ -92,17 +92,19 @@ function vpml_enqueue_scripts( $hook ) {
 	wp_enqueue_style( 'colorbox', plugins_url( 'css/colorbox.css', __FILE__ ) );
 }
 
-add_action( 'wp_ajax_vpml_upload', 'vpml_process_ajax' );
-
 function vpml_add_button( $editor_id ) {
 	echo ' <a href="#vpml_popup" id="vpml-btn" data-editor="' . $editor_id . '" class="vpml-btn button add_media" title="Picasa"><span class="dashicons dashicons-camera vpml-dashicons"></span> Picasa</a><input type="hidden" id="vpml_featured_url" name="vpml_featured_url" value="" /> ';
 }
 
 add_action( 'media_buttons', 'vpml_add_button' );
 
-add_action( 'save_post', 'vpml_save_postdata' );
-
-function vpml_save_postdata( $post_id ) {
+function vpml_save_postdata( $post_id, $post ) {
+	if ( isset( $post->post_status ) && 'auto-draft' == $post->post_status ) {
+		return;
+	}
+	if ( wp_is_post_revision( $post_id ) ) {
+		return;
+	}
 	if ( ! empty( $_POST['vpml_featured_url'] ) ) {
 		if ( strstr( $_SERVER['REQUEST_URI'], 'wp-admin/post-new.php' ) || strstr( $_SERVER['REQUEST_URI'], 'wp-admin/post.php' ) ) {
 			if ( 'page' == $_POST['post_type'] ) {
@@ -119,6 +121,8 @@ function vpml_save_postdata( $post_id ) {
 		}
 	}
 }
+
+add_action( 'save_post', 'vpml_save_postdata', 10, 3 );
 
 function vpml_save_featured( $vurl ) {
 	global $post;
@@ -511,7 +515,7 @@ function vpml_popup_content() {
 						<a href="http://dunghv.com/downloads/wordpress-picasa-media-library"
 						   target="_blank"
 						   onclick="return confirm('This feature only available in Pro version!\nBuy it on http://dunghv.com now?')">
-							<input type="button" class="vpml-button-disable" value="Save & Insert"/></a>
+							<input type="button" class="vgis-button-disable" value="Save & Insert"/></a>
 						<input type="button" id="vpml-featured" class="vpml-button"
 						       value="Set featured image"/>
 
