@@ -515,7 +515,7 @@ function vpml_popup_content() {
 						<a href="http://dunghv.com/downloads/wordpress-picasa-media-library"
 						   target="_blank"
 						   onclick="return confirm('This feature only available in Pro version!\nBuy it on http://dunghv.com now?')">
-							<input type="button" class="vgis-button-disable" value="Save & Insert"/></a>
+							<input type="button" class="vpml-button-disable" value="Save & Insert"/></a>
 						<input type="button" id="vpml-featured" class="vpml-button"
 						       value="Set featured image"/>
 
