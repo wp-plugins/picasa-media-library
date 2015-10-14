@@ -4,7 +4,7 @@
   Plugin URI: http://dunghv.com/downloads/wordpress-picasa-media-library
   Description: Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
   Version: 2.2
-  Author: Dunghv
+  Author: WPclever
   Author URI: http://dunghv.com
  */
 
