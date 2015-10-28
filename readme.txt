@@ -1,5 +1,5 @@
 === Picasa Media Library ===
-Contributors: baby2j
+Contributors: baby2j, wpclever, dunghv
 Donate link: http://wpclever.net
 Tags: picasa, picasa images, picasa download, picasa library, picasa api
 Requires at least: 3.5
