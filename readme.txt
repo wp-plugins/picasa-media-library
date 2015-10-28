@@ -1,6 +1,6 @@
 === Picasa Media Library ===
 Contributors: baby2j
-Donate link: http://dunghv.com
+Donate link: http://wpclever.net
 Tags: picasa, picasa images, picasa download, picasa library, picasa api
 Requires at least: 3.5
 Tested up to: 4.3.1
@@ -24,7 +24,7 @@ http://www.youtube.com/watch?v=0SM9nuh4fhI
 - Use image as featured image
 
 = Note =
-To have full version with "Save to Media Library" feature, please go to http://dunghv.com
+To have full version with "Save to Media Library" feature, please go to http://wpclever.net
 
 == Installation ==
 
@@ -44,7 +44,7 @@ To have full version with "Save to Media Library" feature, please go to http://d
 
 = Need support? =
 
-Visit [plugin documentation website](http://dunghv.com "plugin documentation")
+Visit [plugin documentation website](http://wpclever.net "plugin documentation")
 
 == Changelog ==
 

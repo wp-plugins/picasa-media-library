@@ -1,11 +1,11 @@
 <?php
 /*
   Plugin Name: WP Picasa Media Library
-  Plugin URI: http://dunghv.com/downloads/wordpress-picasa-media-library
+  Plugin URI: http://wpclever.net/downloads/wordpress-picasa-media-library
   Description: Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
   Version: 2.2
   Author: WPclever
-  Author URI: http://dunghv.com
+  Author URI: http://wpclever.net
  */
 
 register_activation_hook( __FILE__, 'vpml_activate' );
@@ -43,8 +43,8 @@ function vpml_menu_page_welcome() {
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/0SM9nuh4fhI" frameborder="0"
 		        allowfullscreen></iframe>
 		<p class="vpml-thank-you">Thank you for choosing Picasa Media Library,<br><strong>Dunghv</strong><br/>Email:
-			dunghv26@gmail.com<br/>Website: <a
-				href="http://dunghv.com" target="_blank">http://dunghv.com</a></p>
+			wpcleverdotnet@gmail.com<br/>Website: <a
+				href="http://wpclever.net" target="_blank">http://wpclever.net</a></p>
 	</div>
 	<?php
 }
@@ -512,9 +512,9 @@ function vpml_popup_content() {
 						<input type="hidden" id="vpml-url" value=""/>
 						<input type="button" id="vpml_insert" class="vpml-button"
 						       value="Insert"/>
-						<a href="http://dunghv.com/downloads/wordpress-picasa-media-library"
+						<a href="http://wpclever.net/downloads/wordpress-picasa-media-library"
 						   target="_blank"
-						   onclick="return confirm('This feature only available in Pro version!\nBuy it on http://dunghv.com now?')">
+						   onclick="return confirm('This feature only available in Pro version!\nBuy it on http://wpclever.net now?')">
 							<input type="button" class="vpml-button-disable" value="Save & Insert"/></a>
 						<input type="button" id="vpml-featured" class="vpml-button"
 						       value="Set featured image"/>
