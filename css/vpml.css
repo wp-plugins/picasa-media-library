@@ -1,0 +1,272 @@
+#vpml_popup {
+    font-size: 13px !important;
+    font-family: "Helvetica", helvetica, arial, sans-serif !important;
+    color: #111 !important;
+}
+
+.vpml-dashicons {
+    vertical-align: middle !important;
+}
+
+.vpml-container {
+    width: 660px;
+    display: inline-block;
+    margin-top: 10px;
+    height: 318px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vpml-item, .vpml-album {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    padding: 2px;
+    background: #fff;
+    box-sizing: content-box !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.vpml-input, .vpml-select {
+    padding: 0 6px !important;
+    border-color: #DDD !important;
+    box-shadow: none !important;
+    border-radius: 2px !important;
+    border: 1px solid #DDD !important;
+    background-color: #fff !important;
+    color: #32373c !important;
+    float: left !important;
+    margin-right: 2px !important;
+    outline: none !important;
+    font-size: 13px !important;
+    line-height: 28px !important;
+    height: 28px !important;
+}
+
+.vpml-input {
+    width: 100%;
+}
+
+.vpml-input-small {
+    width: 60px !important;
+}
+
+.vpml-input-normal {
+    width: 345px !important;
+}
+
+.vpml-textarea {
+    padding: 6px !important;
+    border-color: #DDD !important;
+    box-shadow: none !important;
+    border-radius: 2px !important;
+    border: 1px solid #DDD !important;
+    background-color: #fff !important;
+    color: #32373c !important;
+    float: left !important;
+    margin-right: 2px !important;
+    outline: none !important;
+    font-size: 13px !important;
+    width: 100%;
+}
+
+.vpml-button {
+    padding: 0 6px !important;
+    border-color: #00a0d2 !important;
+    box-shadow: none !important;
+    border-radius: 2px !important;
+    border: 1px solid #00a0d2 !important;
+    background-color: #00a0d2 !important;
+    color: #fff !important;
+    float: left !important;
+    margin-right: 2px !important;
+    cursor: pointer !important;
+    outline: none !important;
+    font-size: 13px !important;
+    line-height: 26px !important;
+    height: 28px !important;
+}
+
+.vpml-button-disable {
+    padding: 0 6px !important;
+    border-color: #dedede !important;
+    box-shadow: none !important;
+    border-radius: 2px !important;
+    border: 1px solid #dedede !important;
+    background-color: #dedede !important;
+    color: #555 !important;
+    float: left !important;
+    margin-right: 2px !important;
+    cursor: pointer !important;
+    outline: none !important;
+    font-size: 13px !important;
+    line-height: 26px !important;
+    height: 28px !important;
+}
+
+.vpml-table {
+    display: table !important;
+    border-collapse: separate !important;
+    border-spacing: 2px !important;
+    border-color: grey !important;
+    vertical-align: middle !important;
+}
+
+.vpml-tr {
+    display: table-row !important;
+    vertical-align: middle !important;
+    border-color: inherit !important;
+}
+
+.vpml-td {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.vpml-check {
+    z-index: 995;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+.vpml-checkbox {
+    border: 1px solid #DDDDDD;
+    background: #fff;
+    color: #32373c;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    border-radius: 2px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out;
+}
+
+.vpml-button:hover {
+    opacity: 0.7;
+}
+
+.vpml-item img, .vpml-album img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.vpml-use-image {
+    width: 100%;
+    display: none;
+}
+
+.vpml-item span, .vpml-album span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+}
+
+.vpml-page {
+    height: 28px;
+    line-height: 28px;
+}
+
+.vpml-item-overlay, .vpml-album-overlay {
+    width: 154px;
+    height: 154px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: none
+}
+
+.vpml-item-link, .vpml-album-link {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    text-align: center;
+    z-index: 998
+}
+
+.vpml-item-link a, .vpml-album-link a {
+    display: inline-block;
+    background: #fff;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 120px;
+    font-size: 12px;
+    outline: none !important;
+}
+
+.vpml-p {
+    margin-top: 10px;
+}
+
+.vpml-item:hover > .vpml-item-overlay, .vpml-album:hover > .vpml-album-overlay {
+    display: block
+}
+
+.vpml-item:hover > .vpml-item-link, .vpml-album:hover > .vpml-album-link {
+    display: block
+}
+
+.vpml-item-single {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.vpml-item-single img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.vpml-loading {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    min-width: 20px;
+    background: url("../images/loading.gif") no-repeat;
+    background-position: center;
+}
+
+.vpml-loading-text {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    min-width: 20px;
+    background: url("../images/loading.gif") no-repeat;
+    padding-left: 30px;
+}

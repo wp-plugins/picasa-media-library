@@ -8,20 +8,21 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
+Get all albums and photos from a Google+ or Picasa user, see a preview, insert into the content, save to media library or set as featured image very easy & quickly.
 
 == Description ==
 
-Get all albums and images from a Google+ or Picasa user, see a preview, insert into content, save to media library or set as featured image very easy.
+Get all albums and photos from a Google+ or Picasa user, see a preview, insert into the content, save to media library or set as featured image very easy & quickly.
 
 = Quick Video Demo =
 http://www.youtube.com/watch?v=0SM9nuh4fhI
 
 = Features =
-- Get all albums and images from a Google+ or Picasa user
-- Insert image into content
-- Save image to Media Library
-- Use image as featured image
+- Get all albums and photos from a Google+ or Picasa user
+- Insert photos into content
+- Multiple select
+- Save photos to Media Library (PRO version)
+- Use photo as featured image
 
 = Note =
 To have full version with "Save to Media Library" feature, please go to http://wpclever.net
@@ -47,6 +48,10 @@ To have full version with "Save to Media Library" feature, please go to http://w
 Visit [plugin documentation website](http://wpclever.net "plugin documentation")
 
 == Changelog ==
+
+= 3.0 =
+* Multiple select
+* Fix issues with FireFox
 
 = 2.2 =
 * Fix duplicate image
